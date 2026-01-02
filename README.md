@@ -68,7 +68,7 @@ $$
 - We can express AR(p) using lag equation
 
 $$
-\phi(L)y_{t} = \epsilon_{t}, \phi(L)= 1 - \sum_{i=1}^{p} \phi_{j}L^{j}, \epsilon_{t} \approx N(0, \sigma_{\epsilon}^{2}
+\phi(L)y_{t} = \epsilon_{t} ,   \phi(L)= 1 - \sum_{i=1}^{p} \phi_{j}L^{j}  ,  \epsilon_{t} \approx N(0, \sigma_{\epsilon}^{2}
 $$
 
 -which gives
