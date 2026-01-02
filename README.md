@@ -59,8 +59,20 @@ $$
 $$
 \Omega=
 \begin{bmatrix}
-    R_{t} \Q_{t} R_{t}^{T}  &&  0\\
+    R_{t} Q_{t} R_{t}^{T}  &&  0\\
     0   &&  H_{t}
 \end{bmatrix} 
 $$
 
+## State Space model for AR(p)
+- We can express AR(p) using lag equation
+
+$$
+\phi(L)y_{t} = \epsilon_{t}, \phi(L)= 1 - \sum_{i=1}^{p} \phi_{j}L^{j}, \epsilon_{t} \approx N(0, \sigma_{\epsilon}^{2}
+$$
+
+-which gives
+
+$$
+
+$$
