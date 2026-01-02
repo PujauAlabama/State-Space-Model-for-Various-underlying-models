@@ -44,8 +44,9 @@ $$
 $$
 
 - where,
+  
 $$
-u_{t}=
+u_{t} =
 \begin{bmatrix}
     R_{t} \eta_{t} \\
     \epsilon_{t}
