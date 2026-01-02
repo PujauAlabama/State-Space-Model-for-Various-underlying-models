@@ -35,9 +35,10 @@ $$
 =\begin{bmatrix}
     T_{t} \\
     Z_{t}
-\end{bmatrix} \times S_{t} + 
+\end{bmatrix} S_{t} + 
 \begin{bmatrix}
     R_{t} \eta_{t} \\
     \epsilon_{t}
-\end{bmatrix}
+\end{bmatrix} \\
+= \Phi_{t} S_{t} + u_{t}
 $$
