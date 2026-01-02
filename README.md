@@ -55,7 +55,7 @@ $$
   
   - and
  
-  $$
+$$
 \Omega=
 \begin{bmatrix}
     R_{t} \Q_{t} R_{t}^{T}  &&  0\\
