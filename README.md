@@ -25,11 +25,19 @@ $$
   -    $T_{t}$ is $m\times m$ dimensional translational matrix,
   -    $R_{t}$  is $m\times n$ dimensional fixed matrix
   -    $\eta_{t} \approx N(0_{n},Q_{t})$ is i.i.d with $Q_{t}$ is $n\times n$ dimesional positive definite variance matrix.
--This equations can be expressed in matrix form
+- This equations can be expressed in matrix form
 
 $$
 \begin{bmatrix}
-    ae+bg & af+bh \\
-    ce+dg & cf+dh
+    S_{t+1} \\
+    y_{t}
+\end{bmatrix}
+=\begin{bmatrix}
+    T_{t} \\
+    Z_{t}
+\end{bmatrix} \times S_{t} + 
+\begin{bmatrix}
+    R_{t} \eta_{t} \\
+    \epsilon_{t}
 \end{bmatrix}
 $$
