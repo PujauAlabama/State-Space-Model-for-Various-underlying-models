@@ -42,3 +42,24 @@ $$
 \end{bmatrix} \\
 = \Phi_{t} S_{t} + u_{t}
 $$
+
+- where,
+$$
+u_{t}=
+\begin{bmatrix}
+    R_{t} \eta_{t} \\
+    \epsilon_{t}
+\end{bmatrix} \\ \approx N(0, \Omega)
+$$
+
+  
+  - and
+ 
+  $$
+\Omega=
+\begin{bmatrix}
+    R_{t} \Q_{t} R_{t}^{T}  &&  0\\
+    0   &&  H_{t}
+\end{bmatrix} 
+$$
+
