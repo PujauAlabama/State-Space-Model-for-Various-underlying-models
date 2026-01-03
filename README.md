@@ -82,11 +82,10 @@ $$
 $$
 S_{t+1} =
 \begin{bmatrix}
-    
-     y_{t+1}  \\
-     y_{t} \\
-     \vdots  \\
-     y_{t-p+2}
+y_{t+1}  \\
+y_{t} \\
+\vdots  \\
+y_{t-p+2}
 \end{bmatrix}
 $$
 
