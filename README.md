@@ -84,6 +84,7 @@ S_{t+1} =
 \begin{bmatrix}
 y_{t+1}  \\
 y_{t} \\
+y_{t-1} \\
 \vdots  \\
 y_{t-p+2}
 \end{bmatrix} = 
@@ -97,12 +98,14 @@ y_{t-p+2}
 \begin{bmatrix}
 y_{t}  \\
 y_{t-1} \\
+y_{t-2} \\
 \vdots  \\
 y_{t-p+1}
 \end{bmatrix} + 
 \begin{bmatrix}
 \epsilon_{t+1}  \\
 0 \\
+0\\
 \vdots  \\
 0
 \end{bmatrix}
