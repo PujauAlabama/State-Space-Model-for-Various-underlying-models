@@ -93,6 +93,18 @@ y_{t-p+2}
 0 & 1 & \dots & 0 & 0 \\
 \vdots & \vdots & \ddots & \vdots & \vdots \\
 0 & 0 & \dots & 1 & 0 
+\end{bmatrix} 
+\begin{bmatrix}
+y_{t}  \\
+y_{t-1} \\
+\vdots  \\
+y_{t-p+1}
+\end{bmatrix} + 
+\begin{bmatrix}
+\epsilon_{t+1}  \\
+0 \\
+\vdots  \\
+0
 \end{bmatrix}
 $$
 
