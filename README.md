@@ -38,7 +38,7 @@ $$
 \end{bmatrix} S_{t} + 
 \begin{bmatrix}
     R_{t} \eta_{t} \\
-    \epsilon_{t}
+    \zeta_{t}
 \end{bmatrix} \\
 = \Phi_{t} S_{t} + u_{t}
 $$
@@ -49,7 +49,7 @@ $$
 u_{t} =
 \begin{bmatrix}
     R_{t} \eta_{t} \\
-    \epsilon_{t}
+    \zeta_{t}
 \end{bmatrix} \\ \approx N(0, \Omega)
 $$
 
@@ -109,7 +109,7 @@ y_{t-p+1}
 \vdots  \\
 0
 \end{bmatrix}
-=T_{t}S_{t} + R_{t}\zeta_{t}
+=T_{t}S_{t} + R_{t}\eta_{t}
 $$
 
 - Which gives
@@ -136,7 +136,7 @@ $$
   -  and i.i.d
     
 $$
-\zeta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
+\eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
 $$
 
 
