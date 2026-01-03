@@ -145,10 +145,10 @@ $$
 $$
 y_{t}=\begin{bmatrix}
 y_{t}  \\
-y_{t-1} \\
-y_{t-2} \\
+0 \\
+0 \\
 \vdots  \\
-y_{t-p+1}
+0
 \end{bmatrix}= \begin{bmatrix}
 1  & 0 & \dots & 0 & 0
 \end{bmatrix} S_{t} = Z_{t}S_{t} + \zeta_{t}
