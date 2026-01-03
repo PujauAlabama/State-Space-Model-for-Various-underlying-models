@@ -86,6 +86,13 @@ y_{t+1}  \\
 y_{t} \\
 \vdots  \\
 y_{t-p+2}
+\end{bmatrix} = 
+\begin{bmatrix}
+\phi_{1} & \phi_{2} & \dots & \phi_{p-1} & \phi_{p} \\
+1 & 0 & \dots & 0 & 0 \\
+0 & 1 & \dots & 0 & 0 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \dots & 1 & 0 
 \end{bmatrix}
 $$
 
