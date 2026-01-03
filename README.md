@@ -4,7 +4,7 @@
 - Let us consider the observable variable $y_{t}$, that can be expressed as
 
 $$
-y_{t} = Z_{t} S_{t} + \epsilon_{t}
+y_{t} = Z_{t} S_{t} + \zeta_{t}
 $$ 
 
 - where,
@@ -12,7 +12,7 @@ $$
   -    $y_{t}$ is k dimensional vector,
   -    $S_{t}$  is m dimensional state space vector at time t
   -    $Z_{t}$ is $k\times m$ dimesional obeservation vector coeffiecient matrix,
-  -    $\epsilon_{t} \approx N(0_{k},H_{t})$ is i.i.d with $H_{t}$ is $k\times k$ dimesional positive definite variance matrix.
+  -    $\zeta_{t} \approx N(0_{k},H_{t})$ is i.i.d with $H_{t}$ is $k\times k$ dimesional positive definite variance matrix.
 - The state space transition equation becomes
 
 $$ 
