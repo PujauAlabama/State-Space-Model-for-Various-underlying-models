@@ -112,7 +112,7 @@ y_{t-p+1}
 =T_{t}S_{t} + R_{t}\eta_{t}
 $$
 
--Which gives
+- Which gives
 
 $$
 T_{t} = 
@@ -122,7 +122,20 @@ T_{t} =
 0 & 1 & \dots & 0 & 0 \\
 \vdots & \vdots & \ddots & \vdots & \vdots \\
 0 & 0 & \dots & 1 & 0 
-\end{bmatrix} 
+\end{bmatrix} ;
+R_{}=
+\begin{bmatrix}
+1  \\
+0 \\
+0 \\
+\vdots  \\
+0
+\end{bmatrix}
+$$
+
+  -  and i.i.d
+$$
+\eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
 $$
 
 
