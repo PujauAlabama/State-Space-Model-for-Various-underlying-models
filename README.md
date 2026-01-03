@@ -71,13 +71,13 @@ $$
 \phi(L)y_{t} = \epsilon_{t} ,   \phi(L)= 1 - \sum_{j=1}^{p} \phi_{j}L^{j}  ,  \epsilon_{t} \approx N(0, \sigma_{\epsilon}^{2})
 $$
 
--which gives
+- which gives
 
 $$
 y_{t} = \sum_{i=1}^{n} \phi_{i} y_{t-j} + \epsilon_{t}
 $$
 
--If we define the state space vector as $\vec{S_{t}} = [y_{t}, y_{t-1}, ..., y_{t-p+1}]^{T}$
+- If we define the state space vector as $\vec{S_{t}} = [y_{t}, y_{t-1}, ..., y_{t-p+1}]^{T}$
 
 $$
 S_{t+1} =
@@ -109,5 +109,21 @@ y_{t-p+1}
 \vdots  \\
 0
 \end{bmatrix}
+=T_{t}S_{t} + R_{t}\eta_{t}
 $$
+
+-Which gives
+
+$$
+T_{t} = 
+\begin{bmatrix}
+\phi_{1} & \phi_{2} & \dots & \phi_{p-1} & \phi_{p} \\
+1 & 0 & \dots & 0 & 0 \\
+0 & 1 & \dots & 0 & 0 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \dots & 1 & 0 
+\end{bmatrix} 
+$$
+
+
 
