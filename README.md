@@ -109,7 +109,7 @@ y_{t-p+1}
 \vdots  \\
 0
 \end{bmatrix}
-=T_{t}S_{t} + R_{t}\eta_{t}
+=T_{t}S_{t} + R_{t}\zeta_{t}
 $$
 
 - Which gives
@@ -136,7 +136,7 @@ $$
   -  and i.i.d
     
 $$
-\eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
+\zeta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
 $$
 
 
