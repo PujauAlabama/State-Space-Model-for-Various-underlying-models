@@ -159,3 +159,17 @@ $$
   \begin{bmatrix}
   1  & 0 & \dots & 0 & 0
   \end{bmatrix}$ and $\zeta_{t}=0$
+
+
+## State Space model for MA(q)
+- We can express the obrservable equation as
+
+$$
+y_{t}=\theta(L) \epsilon_{t} ,   \theta(L)= 1 + \sum_{j=1}^{q} \theta_{j}L^{j}  ,  \epsilon_{t} \approx N(0, \sigma_{\epsilon}^{2})
+$$
+
+- which gives
+
+$$
+y_{t} = \epsilon_{t} + \sum_{i=2}^{q} \theta_{i} y_{t-i} + \epsilon_{t}
+$$
