@@ -5,7 +5,7 @@
 
 $$
 y_{t} = Z_{t} S_{t} + \epsilon_{t}
-$$
+$$ 
 
 - where,
   
