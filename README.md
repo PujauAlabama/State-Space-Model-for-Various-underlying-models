@@ -318,7 +318,7 @@ $$
 - Combining it all in $S_{t+1} = TS_{t} + R \eta_{t}$, we get
 
 $$
-T_{t} = 
+T = 
 \begin{bmatrix}
 \phi_{1} & 1 & 0 & \dots & 0 \\
 \phi_{2} & 0 & 1 & \dots & 0 \\
@@ -326,13 +326,13 @@ T_{t} =
 \vdots & 0 & 0 & \dots & 1 \\
 \phi_{m} & 0 & 0 & \dots & 0 
 \end{bmatrix} ;
-R_{}=
+R =
 \begin{bmatrix}
 1  \\
-0 \\
-0 \\
+\theta_{1} \\
+\theta_{2} \\
 \vdots  \\
-0
+\theta_{m-1}
 \end{bmatrix}
 $$
 
@@ -340,4 +340,10 @@ $$
     
 $$
 \eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
+$$
+
+- The observable equation $y_{t}= ZS_{t}$ gives
+
+$$
+Z= [1 0 \dots 0 0]^{t}
 $$
