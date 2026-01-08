@@ -239,7 +239,7 @@ $$
   -  and i.i.d
     
 $$
-\eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
+\eta_{t}=\epsilon_{t}\approx N(0,\sigma_{\epsilon}^{2})
 $$
 
 
