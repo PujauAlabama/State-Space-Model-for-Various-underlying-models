@@ -155,7 +155,7 @@ y_{t}  \\
 $$
 
 - which implies
-- 
+  
   $$
   Z_{t} =
   \begin{bmatrix}
