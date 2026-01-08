@@ -176,5 +176,70 @@ $$
 - which gives
 
 $$
-y_{t} = \epsilon_{t} + \sum_{i=2}^{q} \theta_{i} y_{t-i} + \epsilon_{t}
+y_{t} = \epsilon_{t} + \sum_{i=1}^{q} \theta_{i} y_{t-i} 
 $$
+
+- Now, we can define the state vector as $S_{t}=[\epsilon_{t-1},\epsilon_{t-2}, \epsilon_{t-3},..., \epsilon_{t-q}]^{T}$
+- Hence,
+
+$$
+S_{t+1} =
+\begin{bmatrix}
+\epsilon_{t}  \\
+\epsilon_{t-1} \\
+\epsilon_{t-2} \\
+\vdots  \\
+\epsilon_{t-(q-1)}
+\end{bmatrix} = 
+\begin{bmatrix}
+0 & 0 & \dots & 0 & 0 \\
+1 & 0 & \dots & 0 & 0 \\
+0 & 1 & \dots & 0 & 0 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \dots & 1 & 0 
+\end{bmatrix} 
+\begin{bmatrix}
+\epsilon_{t-1}  \\
+\epsilon_{t-2} \\
+\epsilon_{t-3} \\
+\vdots  \\
+\epsilon_{t-q+1}
+\end{bmatrix} + 
+\begin{bmatrix}
+\epsilon_{t}  \\
+0 \\
+0\\
+\vdots  \\
+0
+\end{bmatrix}
+=T_{t}S_{t} + R_{t}\eta_{t}
+$$
+
+- Which gives
+
+$$
+T_{t} = 
+\begin{bmatrix}
+0 & 0 & \dots & 0 & 0 \\
+1 & 0 & \dots & 0 & 0 \\
+0 & 1 & \dots & 0 & 0 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \dots & 1 & 0 
+\end{bmatrix} ;
+R_{}=
+\begin{bmatrix}
+1  \\
+0 \\
+0 \\
+\vdots  \\
+0
+\end{bmatrix}
+$$
+
+  -  and i.i.d
+    
+$$
+\eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
+$$
+
+
