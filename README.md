@@ -266,3 +266,19 @@ $$
 
   and $\zeta_{t}=\epsilon_{t} $
 
+
+## State Space model for ARMA(p,q)
+- We can express the obrservable equation as
+
+$$
+\phi(L)y_{t}=\theta(L) \epsilon_{t} ,    \phi(L)= 1 - \sum_{j=1}^{p} \phi_{j}L^{j}  , \theta(L)= 1 + \sum_{j=1}^{q} \theta_{j}L^{j}  ,  \epsilon_{t} \approx N(0, \sigma_{\epsilon}^{2})
+$$
+
+- which gives
+
+$$
+y_{t} = \sum_{i=1}^{n} \phi_{i} y_{t-j} + \epsilon_{t} + \sum_{i=1}^{q} \theta_{i} y_{t-i} 
+$$
+
+- For stationary we need to consider m'th order differenced form of time-series , where $m=max(p,q+1)$ giving ${y_{t}} \approx ARMA(m,m-1)$
+- We can express the State vector using Harvey's secification $S_{t}=[S_{1,t},S_{2,t},...,S_{m,t}]$ with $S_{1,t}=y_{t}$
