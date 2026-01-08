@@ -176,7 +176,7 @@ $$
 - which gives
 
 $$
-y_{t} = \epsilon_{t} + \sum_{i=1}^{q} \theta_{i} y_{t-i} 
+y_{t} = \epsilon_{t} + \sum_{i=1}^{q} \theta_{i} \epsilon_{t-i} 
 $$
 
 - Now, we can define the state vector as $S_{t}=[\epsilon_{t-1},\epsilon_{t-2}, \epsilon_{t-3},..., \epsilon_{t-q}]^{T}$
@@ -277,7 +277,7 @@ $$
 - which gives
 
 $$
-y_{t} = \sum_{i=1}^{n} \phi_{i} y_{t-j} + \epsilon_{t} + \sum_{i=1}^{q} \theta_{i} y_{t-i} 
+y_{t} = \sum_{i=1}^{n} \phi_{i} y_{t-i} + \epsilon_{t} + \sum_{i=1}^{q} \theta_{i} \epsilon_{t-i} 
 $$
 
 - For stationary we need to consider m'th order differenced form of time-series , where $m=max(p,q+1)$ giving ${y_{t}} \approx ARMA(m,m-1)$
@@ -292,24 +292,25 @@ $$
 - -where,
 
 $$
-S_{2,t} = \sum_{i=2}^{m} \phi_{i} y_{t+1-j} + \sum_{i=1}^{m-1} \theta_{i} y_{t+1-i} ; \eta_{t} = \epsilon_{t+1} ; R_{1,1}=1
+S_{2,t} = \sum_{i=2}^{m} \phi_{i} y_{t+1-i} + \sum_{i=1}^{m-1} \theta_{i} \epsilon_{t+1-i} ; \eta_{t} = \epsilon_{t+1} ; R_{1,1}=1
 $$
 
 - Above gives
 
 $$
-S_{2,t+1} = \sum_{i=2}^{m} \phi_{i} y_{t+2-j} + \sum_{i=1}^{m-1} \theta_{i} y_{t+2-i}\\
+S_{2,t+1} = \sum_{i=2}^{m} \phi_{i} y_{t+2-i} + \sum_{i=1}^{m-1} \theta_{i} \epsilon_{t+2-i}\\
 = \phi_{2}S_{2,t} + S_{3,t} + \theta_{1} \epsilon_{t+1}
 $$
 
 and 
 
 $$
-S_{3,t} = \sum_{i=3}^{m} \phi_{i} y_{t+1-j} + \sum_{i=2}^{m-1} \theta_{i} y_{t+1-i} ; \eta_{t} = \epsilon_{t+1} ; R_{2,1}= \theta_{1}
+S_{3,t} = \sum_{i=3}^{m} \phi_{i} y_{t+2-i} + \sum_{i=2}^{m-1} \theta_{i} \epsilon_{t+2-i} ; \eta_{t} = \epsilon_{t+1} ; R_{2,1}= \theta_{1}
 $$
 
 - Induction gives,
 
 $$
-S_{l,t} = \sum_{i=l}^{m} \phi_{i} y_{t+1-j} + \sum_{i=l-1}^{m-1} \theta_{i} y_{t+1-i} ; 
+S_{l,t} = \sum_{i=l}^{m} \phi_{i} y_{t+(l-1)-i} + \sum_{i=l-1}^{m-1} \theta_{i} \epsilon_{t+(l-1)-i} ; \\
+R_{l,1}=\theta_{l-1}
 $$
