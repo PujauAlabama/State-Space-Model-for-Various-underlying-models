@@ -314,3 +314,30 @@ $$
 S_{l,t} = \sum_{i=l}^{m} \phi_{i} y_{t+(l-1)-i} + \sum_{i=l-1}^{m-1} \theta_{i} \epsilon_{t+(l-1)-i} ; \\
 R_{l,1}=\theta_{l-1}
 $$
+
+- Combining it all in $S_{t+1} = TS_{t} + R \eta_{t}$, we get
+
+$$
+T_{t} = 
+\begin{bmatrix}
+\phi_{1} & 1 & 0 & \dots & 0 \\
+\phi_{2} & 0 & 1 & \dots & 0 \\
+\phi_{3} & 0 \vdots \ddots & 0 & vdots \\
+\vdots & 0 & \vdots & \dots & 1 \\
+\phi_{m} & 0 & \dots & \dots & 0 
+\end{bmatrix} ;
+R_{}=
+\begin{bmatrix}
+1  \\
+0 \\
+0 \\
+\vdots  \\
+0
+\end{bmatrix}
+$$
+
+  -  and i.i.d
+    
+$$
+\eta_{t}=\epsilon_{t+1}\approx N(0,\sigma_{\epsilon}^{2})
+$$
