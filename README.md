@@ -322,7 +322,7 @@ T_{t} =
 \begin{bmatrix}
 \phi_{1} & 1 & 0 & \dots & 0 \\
 \phi_{2} & 0 & 1 & \dots & 0 \\
-\phi_{3} & 0 &\vdots \ddots  & vdots \\
+\phi_{3} & 0 &\vdots &\ddots  & \vdots \\
 \vdots & 0 & \vdots & \dots & 1 \\
 \phi_{m} & 0 & \dots & \dots & 0 
 \end{bmatrix} ;
