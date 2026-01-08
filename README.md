@@ -242,4 +242,27 @@ $$
 \eta_{t}=\epsilon_{t}\approx N(0,\sigma_{\epsilon}^{2})
 $$
 
+- The observed variable equation becomes
+
+$$
+y_{t}=\begin{bmatrix}
+y_{t}  \\
+0 \\
+0 \\
+\vdots  \\
+0
+\end{bmatrix}= \begin{bmatrix}
+\theta_{1}  & \theta_{2} & \dots & \theta_{q-1} & \theta_{q}
+\end{bmatrix} S_{t} + \epsilon_{t} = Z_{t}S_{t} + \zeta_{t}
+$$
+
+- which implies
+  
+$$
+Z_{t}=\ \begin{bmatrix}
+\theta_{1}  & \theta_{2} & \dots & \theta_{q-1} & \theta_{q}
+\end{bmatrix}
+$$
+
+  and $\zeta_{t}=\epsilon_{t} $
 
