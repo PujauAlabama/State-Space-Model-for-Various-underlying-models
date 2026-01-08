@@ -155,10 +155,13 @@ y_{t}  \\
 $$
 
 - which implies
-  $ Z_{t} =
+- 
+  $$
+  Z_{t} =
   \begin{bmatrix}
   1  & 0 & \dots & 0 & 0
-  \end{bmatrix}$ and $\zeta_{t}=0$
+  \end{bmatrix}$ and $\zeta_{t}=0
+  $$
 
 
 ## State Space model for MA(q)
