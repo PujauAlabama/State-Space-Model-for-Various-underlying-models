@@ -349,3 +349,41 @@ Z= [1 , 0 , \dots , 0,  0]^{T}
 $$
 
 ## Kalman Filter
+- This combined equations of State space and observable transformation can be expressed in matrix form
+
+$$
+\begin{bmatrix}
+    S_{t+1} \\
+    y_{t}
+\end{bmatrix}
+=\begin{bmatrix}
+    T_{t} \\
+    Z_{t}
+\end{bmatrix} S_{t} + 
+\begin{bmatrix}
+    R_{t} \eta_{t} \\
+    \zeta_{t}
+\end{bmatrix} \\
+= \Phi_{t} S_{t} + u_{t}
+$$
+
+- where,
+  
+$$
+u_{t} =
+\begin{bmatrix}
+    R_{t} \eta_{t} \\
+    \zeta_{t}
+\end{bmatrix \\ \approx N(0, \Omega)
+$$
+
+  
+  - and
+ 
+$$
+\Omega=
+\begin{bmatrix}
+    R_{t} Q_{t} R_{t}^{T}  &&  0\\
+    0   &&  H_{t}
+\end{bmatrix} 
+$$
