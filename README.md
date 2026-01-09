@@ -345,5 +345,7 @@ $$
 - The observable equation $y_{t}= ZS_{t}$ gives
 
 $$
-Z= [1 , 0 , \dots , 0,  0]^{t}
+Z= [1 , 0 , \dots , 0,  0]^{T}
 $$
+
+## Kalman Filter
