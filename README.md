@@ -388,12 +388,12 @@ $$
 \end{bmatrix} 
 $$
 
-- Using Kalman Filter we can forecast, filte and smoothen the data. Let us consider $\italic{F}= {y_{1},y_{2},..., y_{t}}$ be obervation upto time t.
+- Using Kalman Filter we can forecast, filte and smoothen the data. Let us consider $\textit{F}= {y_{1},y_{2},..., y_{t}}$ be obervation upto time t.
 - Kalman filter uses Bayesian statistics to achieve that.
 
 ### Prediction:-
 -The expentation value of state $S_{t}$ given $\italic{F}$ is
 
 $$
-E(S_{t}|italic{F})= S_{t|t-1} = E(T_{t-1}S_{t-1} + R_{t}\eta_{t}|italic{F}) = E(T_{t-1}S_{t-1}|italic{F}) \\= T_{t-1}S_{t-1|t-1}
+E(S_{t}|textit{F})= S_{t|t-1} = E(T_{t-1}S_{t-1} + R_{t}\eta_{t}|textit{F}) = E(T_{t-1}S_{t-1}|textit{F}) = T_{t-1}S_{t-1|t-1}
 $$
