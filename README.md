@@ -403,7 +403,7 @@ E(y_{t}|\textit{F})= y_{t|t-1} = E(Z_{t-1}S_{t-1} + \epsilon_{t-1}|\textit{F}) =
 $$
 
 $$
-Cov(S_{t}|\textit{F})= \Omega_{S}(t|t-1) = Cov(T_{t-1}S_{t-1} + R_{t-1}\eta_{t-1}|\textit{F}))= Cov(T_{t-1}S_{t-1}|\textit{F}) + Cov(R_{t-1}\eta_{t-1}|\textit{F}) =  T_{t-1}\Omega_{S}_{t-1|t-1}T_{t-1}^{-1} + R_{t-1}\Omega_{\eta}_{t-1|t-1}R_{t-1}^{-1}
+Cov(S_{t}|\textit{F})= \Omega_{S}(t|t-1) = Cov(T_{t-1}S_{t-1} + R_{t-1}\eta_{t-1}|\textit{F}))= Cov(T_{t-1}S_{t-1}|\textit{F}) + Cov(R_{t-1}\eta_{t-1}|\textit{F}) =  
 $$
 
 
