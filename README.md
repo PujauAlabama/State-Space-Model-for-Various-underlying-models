@@ -413,7 +413,7 @@ Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{
 $$
 
 ### Forecasting:-
-- This method gives prediction h steps ahead at time $t+h-1$ , given we know $\textit{F}_{t}$ $=\textit{F}$ and $h=1$ gives the same scenario as prediction.
+- This method gives prediction $h+1$ steps ahead at time $t+h$ , given we know $\textit{F}_{t}$ $=\textit{F}$ and $h=1$ gives the same scenario as prediction.
   
 $$
 E(S_{t+h}|\textit{F})= S_{t+h|(t-1)} = E(T_{(t+h-1)}S_{(t+h-1)} + R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}) = E(T_{(t+h-1)}S_{(t+h-1)}|\textit{F}) = T_{(t+h-1)}S_{(t+h-1)|(t-1)}
@@ -424,10 +424,10 @@ E(y_{t+h}|\textit{F})= y_{t+h|(t-1)} = E(Z_{(t+h-1)}S_{(t+h-1)} + \epsilon_{(t+h
 $$
 
 $$
-Cov(S_{t+h}|\textit{F})= \Omega_{S}(t+h|(t-1)) = Cov(T_{(t+h-1)}S_{(t+h-1)} + R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}))= Cov(T_{(t+h-1)}S_{(t+h-1)}|\textit{F}) + Cov(R_{(t+h-1)}\eta_{(t-1)}|\textit{F}) =  T_{(t+h-1)}\Omega_{S_{(t+h-1)|(t-1)}}T_{(t+h-1)}^{-1} + R_{(t+h-1)}\Omega_{\eta_{(t+h-1)|(t-1)}}R^{-1}_{(t+h-1)}
+Cov(S_{t+h}|\textit{F})= \Omega_{S}(t+h|(t-1)) = Cov(T_{(t+h-1)}S_{(t+h-1)} + R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}))= Cov(T_{(t+h-1)}S_{(t+h-1)}|\textit{F}) + Cov(R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}) =  T_{(t+h-1)}\Omega_{S_{(t+h-1)|(t-1)}}T_{(t+h-1)}^{-1} + R_{(t+h-1)}\Omega_{\eta_{(t+h-1)|(t-1)}}R^{-1}_{(t+h-1)}
 $$
 
 $$
-Cov(y_{t+h}|\textit{F})= \Omega_{y}(t+h|(t-1)) = Cov(Z_{(t+h-1)}S_{(t+h-1)} + \epsilon_{(t+h-1)}}|\textit{F}))= Cov(Z_{(t+h-1)}S_{(t+h-1)}|\textit{F}) + Cov(\epsilon_{(t+h-1)}|\textit{F}) =  Z_{(t+h-1)}\Omega_{y_{(t+h-1)|(t-1)}}Z_{(t+h-1)}^{-1} + \Omega_{\epsilon_{(t+h-1)|(t-1)}}
+Cov(y_{t+h}|\textit{F})= \Omega_{y}(t+h|(t-1)) = Cov(Z_{(t+h-1)}S_{(t+h-1)} + \epsilon_{(t+h-1)}|\textit{F}))= Cov(Z_{(t+h-1)}S_{(t+h-1)}|\textit{F}) + Cov(\epsilon_{(t+h-1)}|\textit{F}) =  Z_{(t+h-1)}\Omega_{S_{(t+h-1)|(t-1)}}Z_{(t+h-1)}^{-1} + \Omega_{\epsilon_{(t+h-1)|(t-1)}}
 $$
 
