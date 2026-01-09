@@ -412,6 +412,37 @@ $$
 Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{(t-1)}\eta_{(t-1)}|\textit{F}))= Cov(Z_{(t-1)}S_{(t-1)}|\textit{F}) + Cov(\epsilon_{(t-1)}|\textit{F}) =  Z_{(t-1)}\Omega_{y_{(t-1)|(t-1)}}Z_{(t-1)}^{-1} + \Omega_{\epsilon_{(t-1)|(t-1)}}
 $$
 
+### Filtering:
+- This compares how close the predicted values are to the actual one using mean squared error and then update them.
+-  So the residual term here is $\tilde{\epsilon_{t}}=y_{t}-y_{t|(t-1)}$
+-  We are considering a prior distribution
+
+$$
+S_{t} \approx N(S_{t|(t-1), R_{(t-1)}\Omega_{\eta_{(t-1)|(t-1)}}R^{-1}_{(t-1)}}
+$$
+
+and likelihood
+
+$$
+y_{t} \approx N(y_{t|(t-1)}, H_{t})
+$$
+
+- Using Bayesian theorem , we get the posterior probability distribution
+
+$$
+p(S_{t}|y_{t}) \approx p(S_{t}) p(y_{t}|S_{t})
+$$
+
+- We can maximize the posterior distribution to figure out $S_{t|t}$ in terms of Kalman filter matrix $G_{t}$
+
+$$
+S_{t|t}= S_{t|(t-1)} + G_{t} (y_{t} - y_{t|(t-1)})
+$$
+
+$$
+E(S_{t}|\textit{F_{t}})= S_{t|t} = E(T_{(t-1)}S_{(t-1)} + R_{(t-1)}\eta_{(t-1)}|\textit{F_{t}}) = E(T_{(t-1)}S_{(t-1)}|\textit{F_{t}}) = T_{(t-1)}S_{(t-1)|(t-1)}
+$$
+
 ### Forecasting:-
 - This method gives prediction $h+1$ steps ahead at time $t+h$ , given we know $\textit{F}_{t}$ $=\textit{F}$ and $h=1$ gives the same scenario as prediction.
   
