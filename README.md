@@ -392,7 +392,7 @@ $$
 - Kalman filter uses Bayesian statistics to achieve that.
 
 ### Prediction:-
--The expentation value of state $S_{t}$ given $\italic{F}$ is
+-The expectation value of state $S_{t}$ given $\textit{F}$ is
 
 $$
 E(S_{t}|\textit{F})= S_{t|(t-1)} = E(T_{(t-1)}S_{(t-1)} + R_{(t-1)}\eta_{(t-1)}|\textit{F}) = E(T_{(t-1)}S_{(t-1)}|\textit{F}) = T_{(t-1)}S_{(t-1)|(t-1)}
@@ -410,6 +410,3 @@ $$
 Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{(t-1)}\eta_{(t-1)}|\textit{F}))= Cov(Z_{(t-1)}S_{(t-1)}|\textit{F}) + Cov(\epsilon_{(t-1)}|\textit{F}) =  Z_{(t-1)}\Omega_{y_{(t-1)|(t-1)}}Z_{(t-1)}^{-1} + \Omega_{\epsilon_{(t-1)|(t-1)}}
 $$
 
-$$
-Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{(t-1)}|\textit{F}))= Cov(Z_{(t-1)}S_{(t-1)}|\textit{F}) + Cov(\epsilon_{(t-1)}|\textit{F}) =  Z_{(t-1)}\Omega_{S}_{(t-1)|(t-1)}Z^{-1}_{(t-1)} + \Omega_{\epsilon}_{(t-1)|(t-1)}
-$$
