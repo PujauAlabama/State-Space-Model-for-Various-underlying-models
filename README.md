@@ -392,7 +392,9 @@ $$
 - Kalman filter uses Bayesian statistics to achieve that.
 
 ### Prediction:-
--The expectation value of state $S_{t}$ given $\textit{F}$ is
+- This method methods state space values one step ahead.
+
+- The expectation value of state $S_{t}$ given $\textit{F}$ is
 
 $$
 E(S_{t}|\textit{F})= S_{t|(t-1)} = E(T_{(t-1)}S_{(t-1)} + R_{(t-1)}\eta_{(t-1)}|\textit{F}) = E(T_{(t-1)}S_{(t-1)}|\textit{F}) = T_{(t-1)}S_{(t-1)|(t-1)}
@@ -408,5 +410,24 @@ $$
 
 $$
 Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{(t-1)}\eta_{(t-1)}|\textit{F}))= Cov(Z_{(t-1)}S_{(t-1)}|\textit{F}) + Cov(\epsilon_{(t-1)}|\textit{F}) =  Z_{(t-1)}\Omega_{y_{(t-1)|(t-1)}}Z_{(t-1)}^{-1} + \Omega_{\epsilon_{(t-1)|(t-1)}}
+$$
+
+### Forecasting:-
+- This method gives prediction h steps ahead at time t-1 , given we know $\textit{F_{t}}=\textit{F}$. $h=1$ gives the same scenario as prediction.
+  
+$$
+E(S_{t+h}|\textit{F})= S_{t+h|(t-1)} = E(T_{(t+h-1)}S_{(t+h-1)} + R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}) = E(T_{(t+h-1)}S_{(t+h-1)}|\textit{F}) = T_{(t+h-1)}S_{(t+h-1)|(t-1)}
+$$
+
+$$
+E(y_{t+h}|\textit{F})= y_{t+h|(t-1)} = E(Z_{(t+h-1)}S_{(t+h-1)} + \epsilon_{(t+h-1)}|\textit{F}) = E(Z_{(t+h-1)}S_{(t+h-1)}|\textit{F}) = Z_{(t+h-1)}S_{(t+h-1)|(t-1)}
+$$
+
+$$
+Cov(S_{t+h}|\textit{F})= \Omega_{S}(t+h|(t-1)) = Cov(T_{(t+h-1)}S_{(t+h-1)} + R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}))= Cov(T_{(t+h-1)}S_{(t+h-1)}|\textit{F}) + Cov(R_{(t+h-1)}\eta_{(t-1)}|\textit{F}) =  T_{(t+h-1)}\Omega_{S_{(t+h-1)|(t-1)}}T_{(t+h-1)}^{-1} + R_{(t+h-1)}\Omega_{\eta_{(t+h-1)|(t-1)}}R^{-1}_{(t+h-1)}
+$$
+
+$$
+Cov(y_{t+h}|\textit{F})= \Omega_{y}(t+h|(t-1)) = Cov(Z_{(t+h-1)}S_{(t+h-1)} + \epsilon_{(t+h-1)}}|\textit{F}))= Cov(Z_{(t+h-1)}S_{(t+h-1)}|\textit{F}) + Cov(\epsilon_{(t+h-1)}|\textit{F}) =  Z_{(t+h-1)}\Omega_{y_{(t+h-1)|(t-1)}}Z_{(t+h-1)}^{-1} + \Omega_{\epsilon_{(t+h-1)|(t-1)}}
 $$
 
