@@ -388,7 +388,7 @@ $$
 \end{bmatrix} 
 $$
 
-- Using Kalman Filter we can forecast, filte and smoothen the data. Let us consider $\textit{F}= {y_{1},y_{2},..., y_{t}}$ be obervation upto time t.
+- Using Kalman Filter we can forecast, filte and smoothen the data. Let us consider $\textit{F}= {y_{1},y_{2},..., y_{t-1}}$ be obervation upto time t-1.
 - Kalman filter uses Bayesian statistics to achieve that.
 
 ### Prediction:-
@@ -413,7 +413,7 @@ Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{
 $$
 
 ### Forecasting:-
-- This method gives prediction h steps ahead at time t-1 , given we know $\textit{F_{t}}=\textit{F}$. $h=1$ gives the same scenario as prediction.
+- This method gives prediction h steps ahead at time gives the same scenario as prediction.
   
 $$
 E(S_{t+h}|\textit{F})= S_{t+h|(t-1)} = E(T_{(t+h-1)}S_{(t+h-1)} + R_{(t+h-1)}\eta_{(t+h-1)}|\textit{F}) = E(T_{(t+h-1)}S_{(t+h-1)}|\textit{F}) = T_{(t+h-1)}S_{(t+h-1)|(t-1)}
