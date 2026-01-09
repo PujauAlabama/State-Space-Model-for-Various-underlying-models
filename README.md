@@ -395,18 +395,18 @@ $$
 -The expentation value of state $S_{t}$ given $\italic{F}$ is
 
 $$
-E(S_{t}|\textit{F})= S_{t|t-1} = E(T_{t-1}S_{t-1} + R_{t-1}\eta_{t-1}|\textit{F}) = E(T_{t-1}S_{t-1}|\textit{F}) = T_{t-1}S_{t-1|t-1}
+E(S_{t}|\textit{F})= S_{t|(t-1)} = E(T_{(t-1)}S_{(t-1)} + R_{(t-1)}\eta_{(t-1)}|\textit{F}) = E(T_{(t-1)}S_{(t-1)}|\textit{F}) = T_{(t-1)}S_{(t-1)|(t-1)}
 $$
 
 $$
-E(y_{t}|\textit{F})= y_{t|t-1} = E(Z_{t-1}S_{t-1} + \epsilon_{t-1}|\textit{F}) = E(Z_{t-1}S_{t-1}|\textit{F}) = Z_{t-1}S_{t-1|t-1}
+E(y_{t}|\textit{F})= y_{t|(t-1)} = E(Z_{(t-1)}S_{(t-1)} + \epsilon_{(t-1)}|\textit{F}) = E(Z_{(t-1)}S_{(t-1)}|\textit{F}) = Z_{(t-1)}S_{(t-1)|(t-1)}
 $$
 
 $$
-Cov(S_{t}|\textit{F})= \Omega_{S}(t|t-1) = Cov(T_{t-1}S_{t-1} + R_{t-1}\eta_{t-1}|\textit{F}))= Cov(T_{t-1}S_{t-1}|\textit{F}) + Cov(R_{t-1}\eta_{t-1}|\textit{F}) =  T_{t-1}\Omega_{S_{t-1|t-1}}T_{t-1}^{-1} + R_{t-1}\Omega_{\eta_{t-1|t-1}}R^{-1}_{t-1}
+Cov(S_{t}|\textit{F})= \Omega_{S}(t|(t-1)) = Cov(T_{(t-1)}S_{(t-1)} + R_{(t-1)}\eta_{(t-1)}|\textit{F}))= Cov(T_{(t-1)}S_{(t-1)}|\textit{F}) + Cov(R_{(t-1)}\eta_{(t-1)}|\textit{F}) =  T_{(t-1)}\Omega_{S_{(t-1)|(t-1)}}T_{(t-1)}^{-1} + R_{(t-1)}\Omega_{\eta_{t-1|(t-1)}}R^{-1}_{(t-1)}
 $$
 
 
 $$
-Cov(y_{t}|\textit{F})= \Omega_{y}(t|t-1) = Cov(Z_{t-1}S_{t-1} + \epsilon_{t-1}|\textit{F}))= Cov(Z_{t-1}S_{t-1}|\textit{F}) + Cov(\epsilon_{t-1}|\textit{F}) =  Z_{t-1}\Omega_{S}_{t-1|t-1}Z_{t-1}^{-1} + \Omega_{\epsilon}_{t-1|t-1}
+Cov(y_{t}|\textit{F})= \Omega_{y}(t|(t-1)) = Cov(Z_{(t-1)}S_{(t-1)} + \epsilon_{(t-1)}|\textit{F}))= Cov(Z_{(t-1)}S_{(t-1)}|\textit{F}) + Cov(\epsilon_{(t-1)}|\textit{F}) =  Z_{(t-1)}\Omega_{S}_{(t-1)|(t-1)}Z_{(t-1)}^{-1} + \Omega_{\epsilon}_{(t-1)|(t-1)}
 $$
