@@ -374,7 +374,7 @@ u_{t} =
 \begin{bmatrix}
     R_{t} \eta_{t} \\
     \zeta_{t}
-\end{bmatrix \\ \approx N(0, \Omega)
+\end{bmatrix} \\ \approx N(0, \Omega)
 $$
 
   
@@ -386,4 +386,14 @@ $$
     R_{t} Q_{t} R_{t}^{T}  &&  0\\
     0   &&  H_{t}
 \end{bmatrix} 
+$$
+
+- Using Kalman Filter we can forecast, filte and smoothen the data. Let us consider $\italic{F}= {y_{1},y_{2},..., y_{t}}$ be obervation upto time t.
+- Kalman filter uses Bayesian statistics to achieve that.
+
+### Prediction:-
+-The expentation value of state $S_{t}$ given $\italic{F}$ is
+
+$$
+E(S_{t}|italic{F})= S_{t|t-1} = E(T_{t-1}S_{t-1} + R_{t}\eta_{t}|italic{F}) = E(T_{t-1}S_{t-1}|italic{F}) \\= T_{t-1}S_{t-1|t-1}
 $$
